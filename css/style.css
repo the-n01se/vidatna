@@ -60,8 +60,6 @@ body a {
   background: none;
   color: #1a354f;
   border: 3px solid #1a354f;
-  transform: scale(1.05);
-  box-shadow: 0px 5px 50px rgba(26, 53, 79, 0.8);
 }
 
 .header {
@@ -99,10 +97,6 @@ body a {
   background-color: #575757;
   transition: 0.5s;
   transform: scaleX(0);
-}
-
-.header__menu-item span:hover:before {
-  transform: scaleX(1);
 }
 
 .header__menu-link {
@@ -446,7 +440,8 @@ body a {
     stroke: #ffffff;
   }
   .btn {
-    padding: 20px 100px;
+    padding: 15px 70px;
+    pointer-events: none;
   }
   .header {
     background-image: url(../images/header-bg-mobil.png);
@@ -457,9 +452,16 @@ body a {
   }
 
   .header__menu-link {
-    font-size: 18px;
+    font-size: 14px;
     color: #ffffff;
-    padding: 0px 5px;
+    padding: 0px 10px;
+  }
+  .header__menu-item span {
+      text-align: center;
+  }
+
+  .header__menu-item span::before {
+    display: none;
   }
 
   .header__content {
@@ -490,6 +492,9 @@ body a {
   }
   .about-us img {
     width: 400px;
+  }
+  .partner__img {
+      width: 30%;
   }
   .inst__title {
     text-align: center;
