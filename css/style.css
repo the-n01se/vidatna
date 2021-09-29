@@ -49,7 +49,7 @@ body a {
   background: #1a354f;
   color: #ffffff;
   border: 3px solid transparent;
-  padding: 20px 160px;
+  padding: 20px 108px;
   font-size: 20px;
   line-height: 20px;
   border-radius: 10px;
@@ -144,54 +144,21 @@ body a {
 
 .about-us__advantages {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-us__advantage {
-  font-family: "Gotham Pro", sans-serif;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us__advantage span {
   font-size: 30px;
   line-height: 50px;
   color: #3b3b3b;
-}
-
-.about-us__advantage:nth-child(1) {
-  padding-left: 47px;
-}
-
-.about-us__advantage:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/advantage-1.svg);
-  width: 47px;
-  height: 53px;
-  left: -5px;
-}
-
-.about-us__advantage:nth-child(2) {
-  padding-left: 51px;
-}
-
-.about-us__advantage:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/advantage-2.svg);
-  width: 51px;
-  height: 51px;
-  left: -5px;
-}
-
-.about-us__advantage:nth-child(3) {
-  padding-left: 53px;
-}
-
-.about-us__advantage:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/advantage-3.svg);
-  width: 53px;
-  height: 53px;
-  left: -5px;
+  padding-left: 20px;
 }
 
 .partner {
@@ -386,18 +353,14 @@ body a {
 }
 
 @media only screen and (max-width: 1100px) {
-  .about-us__advantage {
-    font-size: 24px;
+  .about-us__advantage svg {
+    width: 40px;
   }
-  .about-us__advantage:nth-child(1) {
-    padding: 0px 5px;
+
+  .about-us__advantage span {
+    padding-left: 10px;
   }
-  .about-us__advantage:nth-child(2) {
-    padding: 0px 5px;
-  }
-  .about-us__advantage:nth-child(3) {
-    padding: 0px 5px;
-  }
+
   .conn__content {
     display: block;
   }
@@ -417,6 +380,10 @@ body a {
   }
   .about-us__text {
     padding-left: 0px;
+  }
+  .about-us__advantage span {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -457,7 +424,7 @@ body a {
     padding: 0px 10px;
   }
   .header__menu-item span {
-      text-align: center;
+    text-align: center;
   }
 
   .header__menu-item span::before {
@@ -480,7 +447,7 @@ body a {
   }
 
   .about-us__advantage {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
   }
   .about-us {
@@ -494,7 +461,7 @@ body a {
     width: 400px;
   }
   .partner__img {
-      width: 30%;
+    width: 30%;
   }
   .inst__title {
     text-align: center;
@@ -535,10 +502,17 @@ body a {
     font-size: 16px;
     line-height: 27px;
   }
-  .about-us__advantage {
-    font-size: 12px;
+
+  .about-us__advantage span {
+    font-size: 14px;
     line-height: 16px;
+    padding-left: 5px;
   }
+
+  .about-us__advantage svg {
+      width: 30px;
+  }
+
   .about-us img {
     width: 300px;
   }
