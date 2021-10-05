@@ -239,34 +239,21 @@ body a {
 .conn__list-item + .conn__list-item {
   padding-top: 50px;
 }
-.conn__list-item::before {
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 55px;
-  height: 55px;
-  left: -15px;
-}
-.conn__list-item:nth-child(1)::before {
-  content: "";
-  background-image: url(../images/phone.svg);
-}
-
-.conn__list-item:nth-child(2)::before {
-  content: "";
-  background-image: url(../images/mail.svg);
-}
-
-.conn__list-item:nth-child(3)::before {
-  content: "";
-  background-image: url(../images/inst-icon.svg);
-}
 
 .conn__list-item {
+  display: flex;
+}
+
+.conn__list-item img {
+  width: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.conn__list-item a {
   font-size: 30px;
   line-height: 50px;
   color: #1a354f;
-  padding-left: 90px;
-  margin-left: 40px;
   position: relative;
 }
 
@@ -316,12 +303,6 @@ body a {
 .footer__right-site {
   text-align: right;
   list-style: none;
-}
-
-.footer__copy hr {
-  color: #fff;
-  height: 10px;
-  z-index: 5;
 }
 
 .footer__copy {
@@ -392,6 +373,9 @@ body a {
 }
 
 @media only screen and (max-width: 650px) {
+  .title {
+    font-size: 20px;
+}
   .svg-class-fill {
     fill: #ffffff;
   }
@@ -471,6 +455,7 @@ body a {
     line-height: 27px;
   }
   .inst__link {
+      font-size: 15px;
     justify-content: center;
   }
   .inst__link img {
@@ -479,16 +464,16 @@ body a {
   .inst__link span {
     font-size: 15px;
   }
-  .conn__content img {
+  .conn__img {
     width: 400px;
-  }
-  .conn__list {
-      
   }
   .conn__list-item {
     font-size: 25px;
     line-height: 50px;
-    padding-left: 60px;
+    padding-left: 10px;
+  }
+  .conn__list-item a {
+    padding-left: 20px;
   }
   .footer__copyright-text {
     font-size: 18px;
@@ -541,12 +526,19 @@ body a {
   .about-us img {
     width: 300px;
   }
-  .conn__content img {
+  .work__img {
+    margin: 14px 19px;
+  }
+  .conn__img {
     width: 300px;
   }
-  .conn__list-item {
+  .conn__list-item a {
     font-size: 20px;
     line-height: 50px;
+  }
+  .conn__list-item img {
+    width: 55px;
+    padding-left: 10px;
   }
   .footer__text {
     font-size: 14px;
@@ -558,3 +550,9 @@ body a {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .header__title {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
