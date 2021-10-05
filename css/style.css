@@ -73,11 +73,11 @@ body a {
   display: flex;
   justify-content: space-between;
   padding-top: 33px;
+  align-items: center;
 }
 
 .header__menu-list {
   display: flex;
-  width: 50%;
 }
 .header__menu-item {
   text-align: center;
@@ -144,7 +144,7 @@ body a {
 
 .about-us__advantages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -196,7 +196,7 @@ body a {
 }
 
 .work__img {
-  padding: 50px 36px;
+  margin: 50px 36px;
 }
 
 .inst {
@@ -210,24 +210,16 @@ body a {
 }
 
 .inst__link {
-  border-bottom: 3px solid #fff;
-  padding-bottom: 10px;
-  position: relative;
-  font-family: "Gotham Pro", sans-serif;
-  font-size: 30px;
-  line-height: 50px;
-  color: #ffffff;
-  margin-left: 96px;
+  display: flex;
+  align-items: center;
 }
 
-.inst__link::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/inst-img.svg);
-  width: 70px;
-  height: 70px;
-  top: -15px;
-  left: -96px;
+.inst__link span {
+  padding-left: 10px;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 30px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .connection {
@@ -412,10 +404,16 @@ body a {
   }
   .header {
     background-image: url(../images/header-bg-mobil.png);
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 7;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     text-align: center;
+  }
+
+  .header__logo svg {
+    width: 94px;
   }
 
   .header__menu-link {
@@ -463,19 +461,34 @@ body a {
   .partner__img {
     width: 30%;
   }
+  .work__img {
+    width: 127px;
+    margin: 20px 21px;
+  }
   .inst__title {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 27px;
   }
   .inst__link {
-    font-size: 18px;
+    justify-content: center;
+  }
+  .inst__link img {
+    width: 29px;
+  }
+  .inst__link span {
+    font-size: 15px;
   }
   .conn__content img {
     width: 400px;
   }
+  .conn__list {
+      
+  }
   .conn__list-item {
     font-size: 25px;
     line-height: 50px;
+    padding-left: 60px;
   }
   .footer__copyright-text {
     font-size: 18px;
@@ -490,13 +503,25 @@ body a {
 }
 
 @media only screen and (max-width: 450px) {
+  .title {
+    text-align: center;
+  }
+  .header__menu-link {
+    font-size: 10px;
+  }
   .header__title {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 23px;
+    line-height: 29px;
   }
   .header__subtitle {
-    font-size: 18px;
-    line-height: 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .btn {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 13px 76px;
   }
   .about-us__text {
     font-size: 16px;
@@ -510,7 +535,7 @@ body a {
   }
 
   .about-us__advantage svg {
-      width: 30px;
+    width: 30px;
   }
 
   .about-us img {
@@ -530,5 +555,10 @@ body a {
   }
   .footer__copyright-text {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header__title {
   }
 }
