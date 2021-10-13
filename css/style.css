@@ -89,7 +89,7 @@ body a {
 
 .header__menu-item span::before {
   content: "";
-  bottom: -7px;
+  bottom: -2px;
   left: 0;
   position: absolute;
   width: 100%;
@@ -97,6 +97,10 @@ body a {
   background-color: #575757;
   transition: 0.5s;
   transform: scaleX(0);
+}
+
+.header__menu-item span:hover::before {
+      transform: scaleX(1);
 }
 
 .header__menu-link {
@@ -144,7 +148,7 @@ body a {
 
 .about-us__advantages {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -253,6 +257,7 @@ body a {
 .conn__list-item a {
   font-size: 30px;
   line-height: 50px;
+  padding-left: 30px;
   color: #1a354f;
   position: relative;
 }
@@ -335,7 +340,9 @@ body a {
   }
 
   .conn__content {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .conn__content div {
     text-align: center;
