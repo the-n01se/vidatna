@@ -70,6 +70,7 @@ body a {
 }
 
 .header__menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 33px;
@@ -77,6 +78,8 @@ body a {
 }
 
 .header__menu-list {
+    position: absolute;
+    left: 50%;
     display: flex;
 }
 
@@ -122,6 +125,7 @@ body a {
     font-size: 40px;
     line-height: 50px;
     color: #3c3c3c;
+    width: 70%;
 }
 
 .header__subtitle {
@@ -129,6 +133,7 @@ body a {
     font-size: 20px;
     line-height: 37px;
     color: #676767;
+    width: 50%;
 }
 
 .about-us {
@@ -445,12 +450,14 @@ body a {
     .header__title {
         color: #ffffff;
         font-size: 32px;
+        width: 100%;
     }
 
     .header__subtitle {
         color: #a19494;
         font-size: 24px;
         padding-top: 15px;
+        width: 100%;
     }
 
     .about-us__advantage {
@@ -553,7 +560,7 @@ body a {
     .btn {
         font-size: 10px;
         line-height: 20px;
-        padding: 13px 76px;
+        padding: 13px 56px;
     }
 
     .about-us__title {
