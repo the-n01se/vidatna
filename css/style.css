@@ -79,7 +79,7 @@ body a {
 
 .header__menu-list {
     position: absolute;
-    left: 50%;
+    left: 45%;
     display: flex;
 }
 
@@ -129,11 +129,16 @@ body a {
 }
 
 .header__subtitle {
-    padding: 60px 0px;
+    margin-top: 60px;
     font-size: 20px;
     line-height: 37px;
     color: #676767;
     width: 50%;
+}
+
+.header__button {
+    display: inline-block;
+    margin-top: 60px;
 }
 
 .about-us {
@@ -151,6 +156,7 @@ body a {
     font-size: 25px;
     line-height: 50px;
     color: #3b3b3b;
+    width: 47%;
 }
 
 .about-us__advantages {
@@ -273,10 +279,6 @@ body a {
     background-color: #3b3b3b;
 }
 
-.footer__logo svg {
-    width: 220px;
-}
-
 .footer__content {
     padding-top: 100px;
     font-family: "Gotham Pro", sans-serif;
@@ -327,11 +329,11 @@ body a {
 
 .footer__copyright-text {
     font-family: "Gotham Pro", sans-serif;
-    border-bottom: 3px solid #595959;
+    border-bottom: 3px solid rgba(89, 89, 89, 0.3);
     padding-bottom: 10px;
     font-size: 30px;
     line-height: 50px;
-    color: #595959;
+    color: rgba(89, 89, 89, 0.3);
 }
 
 .footer .svg-class-fill {
@@ -374,6 +376,7 @@ body a {
     }
 
     .about-us__text {
+        width: inherit;
         padding-left: 0px;
     }
 
@@ -412,7 +415,10 @@ body a {
 
     .btn {
         padding: 15px 70px;
-        pointer-events: none;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        background-color: #1a354f;
     }
 
     .header {
@@ -427,6 +433,12 @@ body a {
 
     .header__logo svg {
         width: 94px;
+    }
+
+    .header__menu-list {
+        justify-content: end;
+        position: unset;
+        width: 100%;
     }
 
     .header__menu-link {
